@@ -1,0 +1,29 @@
+{
+  "name": "api-oki",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "migrate": "cd ./database && sequelize db:migrate",
+    "create:migration": "cd ./database && sequelize migration:create --name",
+    "create:model": "cd ./database && sequelize model:create --name",
+    "create:seed": "cd ./database && sequelize seed:create --name",
+    "migrañte:undo": "cd ./database && sequelize db:migrate:undo"
+  },
+  "author": "misael",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.12.0",
+    "nodemon": "^3.1.9",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
+    "twilio": "^5.4.2"
+  }
+}
