@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    "start": "nodemon app.js",
     "migrate": "cd ./database && sequelize db:migrate",
     "create:migration": "cd ./database && sequelize migration:create --name",
     "create:model": "cd ./database && sequelize model:create --name",
